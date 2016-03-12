@@ -98,6 +98,7 @@ body{
 */
 .content{
 	width: 100%;
+	display: flex;
 }
 .container{
 	position: relative;
@@ -131,4 +132,60 @@ body{
 	line-height: 50px;
 	color: #ffffff;
 	font-family: cursive;
+}
+
+@media screen and (min-width: 720px) and (min-width: 960px){
+    .content{
+	    width: 960px;
+	    margin:0 auto;
+    }
+    .container{
+		position: relative;
+		-webkit-column-count: 4;
+		-webkit-column-gap: 5px;
+		-webkit-column-width: 220px;
+    }
+	.container .pic .picshow{
+		box-shadow: 0px 0px 10px #666666;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	    width: 220px;
+	    background-color: white;
+	}
+	.container .pic .picshow a img{
+		width: 200px;
+		padding: 10px 10px;
+	    position: relative;
+	}
+}
+	@media  screen and (min-width: 960px) and (max-width: 1367px){
+    .content{
+	    width: 100%
+    }
+    .container{
+		position: relative;
+		-webkit-column-count: 5;
+		-webkit-column-gap: 10px;
+		-webkit-column-width: 260px;
+	}
+	.container .pic .picshow{
+		box-shadow: 0px 0px 10px #666666;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	    width: 260px;
+	    background-color: white;
+	}
+	.container .pic .picshow a img{
+		width: 240px;
+		padding: 10px 10px;
+	    position: relative;
+	}
+	.container .pic .picshow p{
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px;
+	}
 }
