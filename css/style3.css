@@ -133,8 +133,34 @@ body{
 	color: #ffffff;
 	font-family: cursive;
 }
+@media screen and (max-width: 479px){
 
-@media screen and (min-width: 720px) and (min-width: 960px){
+    .content{
+	    width: 960px;
+	    margin:0 auto;
+    }
+    .container{
+		position: relative;
+		-webkit-column-count: 4;
+		-webkit-column-gap: 5px;
+		-webkit-column-width: 240px;
+    }
+	.container .pic .picshow{
+		box-shadow: 0px 0px 10px #666666;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	    width: 240px;
+	    background-color: white;
+	}
+	.container .pic .picshow a img{
+		width: 220px;
+		padding: 10px 10px;
+	    position: relative;
+	}
+   
+}
+@media screen and (min-width: 720px) and (min-width: 980px){
     .content{
 	    width: 960px;
 	    margin:0 auto;
@@ -159,7 +185,7 @@ body{
 	    position: relative;
 	}
 }
-	@media  screen and (min-width: 960px) and (max-width: 1367px){
+@media  screen and (min-width: 981px) and (max-width: 1367px){
     .content{
 	    width: 100%
     }
