@@ -1,0 +1,133 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #f1f1f1;
+	height: auto;
+}
+.header{
+	height: 100px;
+	background-color: rgb(41,50,120);
+	margin-bottom: 5px;
+}
+.header .header_nav{
+	width: 80%;
+	margin:0 auto;
+}
+.header .header_nav .header_title{
+	font-size: 30px;
+	color: #ffffff;
+	height: 100px;
+	line-height: 100px;
+	float: left;
+}
+.header .header_nav .header_navbar ul li{
+    list-style: none;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 100px;
+
+}
+.header .header_nav .header_navbar ul li a{
+   
+   text-decoration: none;
+   font-size: 20px;
+   color: #ffffff;
+   margin-left: 15px;
+   padding: 10px;
+}
+.header .header_nav .header_navbar ul li a:hover{
+    color: #fa58fc;
+}
+.header .header_nav .header_search{
+	float: right;
+}
+.header .header_nav .header_search input[type="text"]{
+	margin-top: 30px;
+	width: 200px;
+	height: 25px;
+	background-color: rgb(0,192,255);
+	font-size: 17px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	padding: 5px; 
+	color: #ffffff;
+}
+.header .header_nav .header_search input[type="submit"]{
+
+	height: 30px;
+	width: 70px;
+	background-color: #6EBB1F;
+	border: none;
+	outline: none;
+	transition: all 0.5s linear;
+	color: #ffffff;
+}
+.header .header_nav .header_search input[type="submit"]:hover{
+
+	background-color: rgb(0,192,255);
+
+}
+/*.container{
+
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	-webkit-column-width: 260px;
+	
+}
+.container ul li{
+    width:260px;
+	background:#ffffff;
+	display: inline-block;
+	margin:10px 0;
+	text-align: center;
+	overflow: visible;
+	position: relative;
+}
+.container ul li img:hover{
+   transform: scale(1.2,1.2);
+}
+.container ul li p{
+
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+
+}
+*/
+.container{
+	position: relative;
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	-webkit-column-width: 260px;
+}
+.container .pic .picshow{
+	box-shadow: 0px 0px 10px #666666;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+    width: 260px;
+    background-color: white;
+}
+.container .pic .picshow a img{
+	width: 240px;
+	padding: 10px 10px;
+    position: relative;
+}
+.container .pic .picshow p{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px;
+}
+.footer{
+	height: 50px;
+	background-color:  rgb(41,50,120);
+	text-align: center;
+	line-height: 50px;
+	color: #ffffff;
+	font-family: cursive;
+}
